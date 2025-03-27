@@ -1,0 +1,105 @@
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    height: 80px;
+    width: 100%;
+
+    padding: 0 12%;
+
+    position: relative;
+}
+nav .logo span {
+    font-size: 30px;
+    font-weight: 800;
+
+    color: var(--primary-color);
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 12px;
+}
+
+nav ul li a {
+    color: white;
+}
+
+nav ul li:hover a{
+    color: var(--primary-color)
+}
+
+nav .navBtns {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+nav .navBtns .social{
+    display: flex;
+    gap: 10px;
+}
+
+nav .navBtns .social a{
+    color: white;
+}
+
+nav .navBtns i {
+    height: 40px;
+    width: 40px;
+    background-color: var(--primary-color);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    transition: .6s;
+
+    border: 1px solid var(--primary-color);
+}
+
+nav .navBtns i:hover {
+    background-color: transparent;
+    color: var(--primary-color);
+
+}
+
+.bars{
+    display: none;
+}
+
+@media screen and (max-width:900px) {
+    .bars{
+        display: flex;
+    }
+    nav ul{
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        width: 100%; 
+        z-index: 999;
+        background-color: black;
+        transition: .6s;
+    }
+
+    nav ul li {
+        display: block;
+        padding: 20px 0;
+        padding-left: 12% !important; 
+        border-bottom: 0.2px solid rgba(131, 131, 131, 0.2);
+    }
+
+    nav ul li:first-of-type {
+        border-top: 0.2px solid rgba(131, 131, 131, 0.2);
+    }
+
+    nav .showMenu {
+        left: 0;
+    }
+}
