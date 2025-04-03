@@ -204,7 +204,7 @@ function Home() {
             <h3>C++</h3>
           </div>
 
-          <span>85%</span>
+          <span>70%</span>
 
           <p>I like to use it in projects and small projects.</p>
         </div>
@@ -214,7 +214,7 @@ function Home() {
             <h3>Python</h3>
           </div>
 
-          <span>70%</span>
+          <span>60%</span>
 
           <p>
             I like writing it to create gui and many things on raspberry pi.
@@ -230,7 +230,7 @@ function Home() {
             <h3>JAVA</h3>
           </div>
 
-          <span>80%</span>
+          <span>60%</span>
 
           <p>It's in the class and I quite like it.</p>
         </div>
